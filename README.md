@@ -1,58 +1,44 @@
-# Cloud Run Hello World with Cloud Code
+LINE Bot with Vertex AI Agent Builder
+Project Introduction
+This project demonstrates how to use LINE Bot and Vertex AI Agent Builder to create a travel information inquiry robot. Users can enter travel-related questions in LINE, and the robot will search Google Search and enterprise data through Vertex AI Agent Builder and answer users' questions in natural language.
 
-"Hello World" is a [Cloud Run](https://cloud.google.com/run/docs) application that renders a simple webpage.
+Features
+Users can enter travel-related questions in LINE.
+The robot will search Google Search and enterprise data through Vertex AI Agent Builder.
+The robot will answer users' questions in natural language.
+Technology
+LINE Messaging API
+Vertex AI Agent Builder
+Google Cloud Run
+Python
+Architecture
+[Image 1: System Architecture Diagram]
 
-For details on how to use this sample as a template in Cloud Code, read the documentation for Cloud Code for [VS Code](https://cloud.google.com/code/docs/vscode/quickstart-cloud-run?utm_source=ext&utm_medium=partner&utm_campaign=CDR_kri_gcp_cloudcodereadmes_012521&utm_content=-) or [IntelliJ](https://cloud.google.com/code/docs/intellij/quickstart-cloud-run?utm_source=ext&utm_medium=partner&utm_campaign=CDR_kri_gcp_cloudcodereadmes_012521&utm_content=-).
+Deployment
+Create a LINE Bot account.
+Create a Cloud Run service on GCP.
+Set the Channel Secret and Channel Access Token of LINE Bot to the environment variables of the Cloud Run service.
+Deploy the code to the Cloud Run service.
+Set the Webhook URL in the LINE Bot settings.
+Usage
+Add the robot as a friend in LINE.
+Enter travel-related questions in LINE.
+The robot will answer your questions in natural language.
+References
+LINE Messaging API documentation: https://developers.line.biz/en/docs/messaging-api/
+Vertex AI Agent Builder documentation: https://cloud.google.com/vertex-ai/docs/agent-builder/overview
+Google Cloud Run documentation: https://cloud.google.com/run/docs/
+Python documentation: https://www.python.org/doc/
+Precautions
+This project is for demonstration purposes only and does not guarantee its availability or security.
+This project uses some GCP services, which may incur some costs.
+The code of this project is for reference only, please modify it according to your actual needs.
+Disclaimer
+The author of this project is not responsible for any loss or damage caused by the use of this project.
 
-### Table of Contents
-* [Getting Started with VS Code](#getting-started-with-vs-code)
-* [Getting Started with IntelliJ](#getting-started-with-intellij)
-* [Sign up for User Research](#sign-up-for-user-research)
+Contact
+If you have any questions, please contact yuting.tw@gmail.com.
 
----
-## Getting Started with VS Code
+License
+The code of this project uses the MIT license.
 
-### Run the app locally with the Cloud Run Emulator
-1. Click on the Cloud Code status bar and select 'Run on Cloud Run Emulator'.  
-![image](./img/status-bar.png)
-
-2. Use the Cloud Run Emulator dialog to specify your [builder option](https://cloud.google.com/code/docs/vscode/deploying-a-cloud-run-app#deploying_a_cloud_run_service). Cloud Code supports Docker, Jib, and Buildpacks. See the skaffold documentation on [builders](https://skaffold.dev/docs/pipeline-stages/builders/) for more information about build artifact types.  
-![image](./img/build-config.png)
-
-3. Click ‘Run’. Cloud Code begins building your image.
-
-4. View the build progress in the OUTPUT window. Once the build has finished, click on the URL in the OUTPUT window to view your live application.  
-![image](./img/cloud-run-url.png)
-
-5. To stop the application, click the stop icon on the Debug Toolbar.
-
----
-## Getting Started with IntelliJ
-
-### Run the app locally with the Cloud Run Emulator
-
-#### Define run configuration
-
-1. Click the Run/Debug configurations dropdown on the top taskbar and select 'Edit Configurations'.  
-![image](./img/edit-config.png)
-
-2. Select 'Cloud Run: Run Locally' and specify your [builder option](https://cloud.google.com/code/docs/intellij/developing-a-cloud-run-app#defining_your_run_configuration). Cloud Code supports Docker, Jib, and Buildpacks. See the skaffold documentation on [builders](https://skaffold.dev/docs/pipeline-stages/builders/) for more information about build artifact types.  
-![image](./img/local-build-config.png)
-
-#### Run the application
-1. Click the Run/Debug configurations dropdown and select 'Cloud Run: Run Locally'. Click the run icon.  
-![image](./img/config-run-locally.png)
-
-2. View the build process in the output window. Once the build has finished, you will receive a notification from the Event Log. Click 'View' to access the local URLs for your deployed services.  
-![image](./img/local-success.png)
-
----
-## Sign up for User Research
-
-We want to hear your feedback!
-
-The Cloud Code team is inviting our user community to sign-up to participate in Google User Experience Research. 
-
-If you’re invited to join a study, you may try out a new product or tell us what you think about the products you use every day. At this time, Google is only sending invitations for upcoming remote studies. Once a study is complete, you’ll receive a token of thanks for your participation such as a gift card or some Google swag. 
-
-[Sign up using this link](https://google.qualtrics.com/jfe/form/SV_4Me7SiMewdvVYhL?reserved=1&utm_source=In-product&Q_Language=en&utm_medium=own_prd&utm_campaign=Q1&productTag=clou&campaignDate=January2021&referral_code=UXbT481079) and answer a few questions about yourself, as this will help our research team match you to studies that are a great fit.
