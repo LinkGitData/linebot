@@ -44,7 +44,7 @@ This project demonstrates how to use LINE Bot and Vertex AI Agent Builder to cre
 The author of this project is not responsible for any loss or damage caused by the use of this project.
 
 ## Contact
-If you have any questions, please contact [your email address].
+If you have any questions, please contact yuting.tw@gmail.com.
 
 ## License
 The code of this project uses the MIT license.
